@@ -91,6 +91,10 @@ nav > nav {
 .strategic-planning .row {
     padding: 50px 20px;
 }
+/* BENEFITS SECTION */
+.benefits .row {
+    padding-bottom: 65px;
+}
 /*! RESPONIVE */
 @media screen and (min-width: 768px) {
     .container {
@@ -112,6 +116,17 @@ nav > nav {
     }
     .benefits .col {
         width: 48%;
+    }
+    .about-us .row {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    .about-us .col:first-child {
+        width:65.6%;
+    }
+    .about-us .col {
+        width: calc(100% / 3 - 15px);
     }
 }
 
