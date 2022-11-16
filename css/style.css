@@ -11,6 +11,7 @@
     --custom-light-blue: #b5ddff;
     --custom-viol: #9792e4;
     --custom-orange: #fdc15f;
+    --custom-grey: #5a6e7f;
     --custom-black: #333333;
 }
 /*? GENERICS */
@@ -23,6 +24,16 @@ footer {
     color: white;
     text-align: center;
     padding: 48px 0;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+/*? FONT AWESOME */
+.fa-file-code {
+    font-size: 120px;
+    color: var(--custom-blue);
+    padding-bottom: 30px;
 }
 /*? UTILITIES */
 .container {
@@ -54,6 +65,14 @@ footer {
 .mt-70 {
     margin-top: 70px;
 }
+.btn {
+    background-color: var(--custom-blue);
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+    border-radius: 30px;
+    margin: 30px 0;
+}
 .row {
     display: flex;
     flex-direction: column;
@@ -65,9 +84,6 @@ footer {
 .col {
     width: 100%;
     min-height: 360px;
-}
-.card {
-    height: 360px;
 }
 .flex {
     display: flex;
@@ -99,6 +115,38 @@ nav > nav {
     padding-right: 5px;
 }
 /** MAIN */
+/* DEMO APP */
+.demo-app {
+    text-align: center;
+    color: var(--custom-grey);
+    font-weight: bold;
+}
+.demo-app .row {
+    align-items: stretch;
+}
+.demo-app .col:first-child {
+    text-align: left;
+}
+.demo-app img {
+    height: 270px;
+    display: block;
+    margin: 0 auto;
+}
+.demo-app p {
+    line-height: 25px;
+}
+.demo-app h2 {
+    color: var(--custom-blue);
+    font-size: 2em;
+    padding-bottom: 30px;
+}
+.demo-app .col {
+    padding: 30px 30px 0;
+    border-radius: 35px;
+}
+.demo-app .flex {
+    flex-direction: column;
+}
 /* STRATEGIC PLANNING SECTION */
 .strategic-planning .row {
     padding: 50px 20px;
@@ -130,6 +178,13 @@ nav > nav {
     .about-us .col {
         width: calc(100% / 3 - 15px);
     }
+    .demo-app .btn {
+        width: 70%;
+    }
+    .demo-app img {
+        margin: 0;
+        width: 270px;
+    }
     .benefits .row {
         flex-direction: row;
     }
@@ -147,6 +202,12 @@ nav > nav {
     }
     nav > nav {
         display: block;
+    }
+    .demo-app .col {
+        flex-direction: row;
+    }
+    .demo-app img {
+        align-self: flex-end;
     }
     .strategic-planning .row {
         flex-direction: row;
