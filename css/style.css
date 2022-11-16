@@ -33,11 +33,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 25px;
+    padding: 0 20px;
 }
 .col {
-    width: 80%;
+    width: 100%;
     min-height: 360px;
-    padding: 12px;
 }
 .card {
     height: 360px;
@@ -59,14 +60,13 @@ header {
     height: 76px;
     justify-content: space-between;
     align-items: center;
+    padding: 0 20px;
 }
 #logo {
     display: block;
-    padding: 5px;
 }
 .menu {
     font-size: 1.5rem;
-    padding: 5px;
 }
 nav > nav {
     display: none;
