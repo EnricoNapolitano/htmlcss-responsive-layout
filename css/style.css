@@ -6,8 +6,43 @@
 }
 /* ? COLOR PALETTE */
 :root {
-    --custom-blue: 0084fd;
+    --custom-blue: #0084fd;
     --custom-viol: #9792e4;
     --custom-orange: #fdc15f;
     --custom-black: #333333;
+}
+/*? UTILITIES */
+.bdr {
+    border: 2px dashed red;
+}
+.container {
+    max-width: 480px;
+    margin: 0 auto;
+}
+.mt-150 {
+    margin-top: 150px;
+}
+.flex {
+    display: flex;
+}
+/** HEADER */
+header {
+    background-color: var(--custom-blue);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+.navbar {
+    height: 76px;
+    justify-content: space-between;
+    align-items: center;
+}
+#logo {
+    display: block;
+}
+.menu {
+    font-size: 1.5rem;
+    color: white;
 }
