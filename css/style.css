@@ -13,17 +13,23 @@
     --custom-black: #333333;
 }
 /*? UTILITIES */
-.bdr {
+.brd {
     border: 2px dashed red;
 }
 .bg-white {
     background-color: white;
+}
+.bg-violet {
+    background-color: var(--custom-viol);
 }
 .bg-light-blue {
     background-color: var(--custom-light-blue);
 }
 .mt-150 {
     margin-top: 150px;
+}
+.mt-80 {
+    margin-top: 80px;
 }
 .container {
     max-width: 480px;
@@ -33,6 +39,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
     gap: 25px;
     padding: 0 20px;
 }
@@ -77,6 +84,17 @@ nav > nav {
 @media screen and (min-width: 768px) {
     .container {
         max-width: 750px;
+    }
+    .row {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    .row.container .col:first-child{
+        width: 65.6%
+    }
+    .row.container .col {
+        width: calc(100% / 3 - 15px);
     }
 }
 
