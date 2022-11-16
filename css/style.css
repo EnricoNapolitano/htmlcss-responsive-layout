@@ -19,9 +19,18 @@
     text-align: center;
     padding: 40px 0;
 }
+footer {
+    color: white;
+    text-align: center;
+    padding: 48px 0;
+}
 /*? UTILITIES */
 .container {
     max-width: 480px;
+    margin: 0 auto;
+}
+.sm-container {
+    max-width: 500px;
     margin: 0 auto;
 }
 .brd {
@@ -32,6 +41,9 @@
 }
 .bg-light-blue {
     background-color: var(--custom-light-blue);
+}
+.bg-black {
+    background-color: var(--custom-black);
 }
 .mt-150 {
     margin-top: 150px;
@@ -94,6 +106,10 @@ nav > nav {
 /* BENEFITS SECTION */
 .benefits .row {
     padding-bottom: 65px;
+}
+/* FREE SECTION */
+.free .row {
+    padding: 60px 20px;
 }
 /*! RESPONIVE */
 @media screen and (min-width: 768px) {
