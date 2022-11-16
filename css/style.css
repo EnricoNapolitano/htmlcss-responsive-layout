@@ -41,14 +41,32 @@ header {
 }
 #logo {
     display: block;
+    padding: 5px;
 }
 .menu {
     font-size: 1.5rem;
     color: white;
+    padding: 5px;
+}
+nav > nav {
+    display: none;
+    padding-right: 5px;
 }
 /*! RESPONIVE */
 @media screen and (min-width: 768px) {
     .container {
         max-width: 750px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .container {
+        max-width: 1200px;
+    }
+    .menu {
+        display: none;
+    }
+    nav > nav {
+        display: block;
     }
 }
