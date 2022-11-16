@@ -80,20 +80,24 @@ nav > nav {
     padding-right: 5px;
 }
 /** MAIN */
+/* STRATEGIC PLANNING SECTION */
+.strategic-planning .row {
+    padding: 50px 20px;
+}
 /*! RESPONIVE */
 @media screen and (min-width: 768px) {
     .container {
         max-width: 750px;
     }
-    .row {
+    .demo-app .row {
         flex-direction: row;
         justify-content: space-between;
         gap: 20px;
     }
-    .row.container .col:first-child{
+    .demo-app .row.container .col:first-child{
         width: 65.6%
     }
-    .row.container .col {
+    .demo-app .row.container .col {
         width: calc(100% / 3 - 15px);
     }
 }
@@ -107,5 +111,12 @@ nav > nav {
     }
     nav > nav {
         display: block;
+    }
+    .strategic-planning .row {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .strategic-planning .col {
+        width: 45%;
     }
 }
