@@ -7,6 +7,7 @@
 /* ? COLOR PALETTE */
 :root {
     --custom-blue: #0084fd;
+    --custom-light-blue: #b5ddff;
     --custom-viol: #9792e4;
     --custom-orange: #fdc15f;
     --custom-black: #333333;
@@ -15,12 +16,31 @@
 .bdr {
     border: 2px dashed red;
 }
+.bg-white {
+    background-color: white;
+}
+.bg-light-blue {
+    background-color: var(--custom-light-blue);
+}
+.mt-150 {
+    margin-top: 150px;
+}
 .container {
     max-width: 480px;
     margin: 0 auto;
 }
-.mt-150 {
-    margin-top: 150px;
+.row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.col {
+    width: 80%;
+    min-height: 360px;
+    padding: 12px;
+}
+.card {
+    height: 360px;
 }
 .flex {
     display: flex;
@@ -28,6 +48,7 @@
 /** HEADER */
 header {
     background-color: var(--custom-blue);
+    color: white;
     position: fixed;
     top: 0;
     left: 0;
@@ -45,13 +66,13 @@ header {
 }
 .menu {
     font-size: 1.5rem;
-    color: white;
     padding: 5px;
 }
 nav > nav {
     display: none;
     padding-right: 5px;
 }
+/** MAIN */
 /*! RESPONIVE */
 @media screen and (min-width: 768px) {
     .container {
