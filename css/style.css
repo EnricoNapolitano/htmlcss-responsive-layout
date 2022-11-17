@@ -34,6 +34,10 @@ a {
     color: var(--custom-blue);
     padding-bottom: 30px;
 }
+header .fa-solid {
+    color: white;
+    padding-bottom: 0;
+}
 /*? UTILITIES */
 .container {
     max-width: 480px;
@@ -65,12 +69,20 @@ a {
     margin-top: 70px;
 }
 .btn {
-    background-color: var(--custom-blue);
+    background-color: var(--custom-viol);
     color: white;
     text-align: center;
-    padding: 15px 20px;
+    padding: 8px 20px;
     border-radius: 30px;
     margin: 30px 0;
+}
+header .btn {
+    background-color: white;
+    color: black;
+}
+.demo-app .btn {
+    background-color: var(--custom-blue);
+    padding: 12px 20px;
 }
 .row {
     display: flex;
@@ -107,11 +119,19 @@ header {
     display: block;
 }
 .menu {
-    font-size: 1.5rem;
-}
-nav > nav {
-    display: none;
     padding-right: 5px;
+    display: block;
+}
+.navbar nav.menu ul {
+    display: none;
+    list-style-type: none;
+}
+header li {
+    padding: 0 20px;
+}
+header li:last-child{
+    padding: 0;
+    padding-left: 20px;
 }
 /** MAIN */
 /* DEMO APP */
@@ -194,11 +214,13 @@ nav > nav {
     .container {
         max-width: 1200px;
     }
-    .menu {
+    .menu .fa-bars{
         display: none;
     }
-    nav > nav {
-        display: block;
+    .navbar nav.menu ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
     .demo-app .col {
         flex-direction: row;
