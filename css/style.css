@@ -30,8 +30,7 @@ a {
     color: white;
 }
 /*? FONT AWESOME */
-.fa-file-code {
-    font-size: 120px;
+.fa-solid {
     color: var(--custom-blue);
     padding-bottom: 30px;
 }
@@ -167,16 +166,14 @@ nav > nav {
     .demo-app .row,
     .about-us .row {
         flex-direction: row;
-        justify-content: space-between;
-        gap: 20px;
     }
     .demo-app .row.container .col:first-child,
     .about-us .col:first-child{
-        width: 65.6%
+        width: calc(100% / 3 * 2 - 20px)
     }
     .demo-app .col,
     .about-us .col {
-        width: calc(100% / 3 - 15px);
+        width: calc(100% / 3 - 20px);
     }
     .demo-app .btn {
         width: 70%;
