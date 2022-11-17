@@ -38,6 +38,10 @@ header .fa-solid {
     color: white;
     padding-bottom: 0;
 }
+.fa-arrow-down {
+    color: black;
+    padding: 10px;
+}
 /*? UTILITIES */
 .container {
     max-width: 480px;
@@ -46,6 +50,9 @@ header .fa-solid {
 .sm-container {
     max-width: 500px;
     margin: 0 auto;
+}
+section:nth-child(even) {
+    background-color: var(--custom-viol);
 }
 .brd {
     border: 2px dashed red;
@@ -67,6 +74,9 @@ header .fa-solid {
 }
 .mt-70 {
     margin-top: 70px;
+}
+.mt-20 {
+    margin-top: 20px;
 }
 .btn {
     background-color: var(--custom-viol);
@@ -98,6 +108,14 @@ header .btn {
 }
 .flex {
     display: flex;
+}
+.arrow {
+    background-color: var(--custom-viol);
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    margin: 0 auto;
+    cursor: pointer;
 }
 /** HEADER */
 header {
@@ -167,8 +185,49 @@ header li:last-child{
     flex-direction: column;
 }
 /* STRATEGIC PLANNING SECTION */
-.strategic-planning .row {
+#planning .row {
+    align-items: flex-end;
+}
+#planning h2 {
+    font-size: 2.5rem;
+    padding: 20px 0;
+    color: white;
+}
+#planning h3 {
+    font-size: 1.5rem;
+    padding: 20px 0;
+}
+#planning p {
+    padding-bottom: 30px;
+}
+#planning .row {
     padding: 50px 20px;
+}
+#planning img {
+    width: 100%;
+}
+#planning .card {
+    max-width: 80%;
+    margin: 0 auto;
+    color: white;
+}
+#planning figure {
+    margin: 0 auto;
+}
+#planning .card figure {
+    padding-bottom: 55px;
+}
+#planning .white-card {
+    max-width:80%;
+    background-color: white;
+    border-radius: 45px;
+    text-align: center;
+    line-height: 2em;
+    padding: 40px;
+    margin: 0 auto;
+}
+#planning .white-card figure {
+    width: 65%;
 }
 /* BENEFITS SECTION */
 .benefits .row {
@@ -187,9 +246,9 @@ header li:last-child{
     .about-us .row {
         flex-direction: row;
     }
-    .demo-app .row.container .col:first-child,
+    .demo-app .row .col:first-child,
     .about-us .col:first-child{
-        width: calc(100% / 3 * 2 - 20px)
+        width: calc(100% / 3 * 2 - 16px)
     }
     .demo-app .col,
     .about-us .col {
@@ -228,12 +287,12 @@ header li:last-child{
     .demo-app img {
         align-self: flex-end;
     }
-    .strategic-planning .row {
+    #planning .row {
         flex-direction: row;
         justify-content: center;
     }
-    .strategic-planning .col {
-        width: 45%;
+    #planning .col {
+        flex-basis: 35%;
     }
     .benefits .row {
         flex-direction: row;
