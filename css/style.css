@@ -274,8 +274,34 @@ header li:last-child{
     color: white;
 }
 /* BENEFITS SECTION */
+.benefits h2 {
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 40px 0;
+}
+.benefits .col {
+    background-color: white;
+    border-radius: 40px;
+    padding: 30px;
+}
+.benefits .col h3 {
+    color: var(--custom-viol);
+    font-size: 4rem;
+}
+.benefits .col h4 {
+    color: var(--custom-viol);
+    font-size: 2rem;
+    padding-bottom: 20px;
+}
+.benefits p {
+    line-height: 30px;
+}
 .benefits .row {
     padding-bottom: 65px;
+}
+.benefits .btn {
+    width: 140px;
 }
 /* FREE SECTION */
 .free .row {
