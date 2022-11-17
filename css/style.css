@@ -303,6 +303,39 @@ header li:last-child{
 .benefits .btn {
     width: 140px;
 }
+/* ABOUT US */
+.about-us h2 {
+    color: var(--custom-viol);
+    font-size: 2.5rem;
+    text-align: center;
+}
+.about-us p {
+    line-height: 30px;
+    padding: 40px 0;
+}
+.about-us .fa-quote-left {
+    color: var(--custom-viol);
+    position: relative;
+    left: 127px;
+    bottom: 420px;
+}
+.about-us .col figure {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.about-us .col img {
+    width: 100%;
+}
+.about-us div.quote {
+    color: var(--custom-viol);
+    font-weight: bold;
+    font-size: 2em;
+}
+.about-us .btn {
+    width: 230px;
+}
 /* FREE SECTION */
 .free .row {
     padding: 60px 20px;
@@ -351,6 +384,9 @@ header li:last-child{
     }
     .benefits .col {
         width: 48%;
+    }
+    .about-us .row {
+        align-items: flex-start;
     }
 }
 @media screen and (min-width: 992px) {
