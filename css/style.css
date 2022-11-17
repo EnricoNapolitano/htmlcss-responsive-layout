@@ -20,6 +20,11 @@
     text-align: center;
     padding: 40px 0;
 }
+#testimonials h2 {
+    color:var(--custom-viol);
+    font-size: 2.5rem;
+    text-align: center;
+}
 footer {
     color: white;
     text-align: center;
@@ -104,7 +109,6 @@ header .btn {
 }
 .col {
     width: 100%;
-    min-height: 360px;
 }
 .flex {
     display: flex;
@@ -171,6 +175,7 @@ header li:last-child{
 }
 .demo-app p {
     line-height: 25px;
+    padding-bottom: 30px;
 }
 .demo-app h2 {
     color: var(--custom-blue);
@@ -229,6 +234,45 @@ header li:last-child{
 #planning .white-card figure {
     width: 65%;
 }
+/* TESTIMONIALS */
+.testimonials .col h4 {
+    font-size: 30px;
+    padding-top: 30px;
+    text-align: center;
+}
+.testimonials p {
+    text-align: center;
+    line-height: 30px;
+}
+.testimonials .col {
+    background-color: var(--custom-viol);
+    border-radius: 40px;
+    color: white
+}
+.testimonials .col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 35px;
+}
+.testimonials .col > figure {
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+.testimonials figure img {
+    width: 160%;
+    position: relative;
+    bottom: 1px;
+    right: 50px;
+}
+.fa-quote-left, .fa-quote-right {
+    display: inline;
+    color: white;
+}
 /* BENEFITS SECTION */
 .benefits .row {
     padding-bottom: 65px;
@@ -261,6 +305,21 @@ header li:last-child{
         margin: 0;
         width: 270px;
     }
+    #testimonials h2 {
+        font-size: 3rem;
+    }
+    .testimonials .col {
+        flex-direction: row;
+        gap: 40px;
+    }
+    .testimonials .col p,
+    .testimonials .col h4 {
+        text-align: left;
+        padding-left: 30px;
+    }
+    .testimonials .col > div {
+        width: 70%;
+    }
     .benefits .row {
         flex-direction: row;
     }
@@ -268,7 +327,6 @@ header li:last-child{
         width: 48%;
     }
 }
-
 @media screen and (min-width: 992px) {
     .container {
         max-width: 1200px;
