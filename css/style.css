@@ -5,6 +5,9 @@
     box-sizing: border-box;
     font-family: 'PT Sans', sans-serif;
 }
+html {
+    scroll-behavior: smooth;
+}
 /* ? COLOR PALETTE */
 :root {
     --custom-blue: #0084fd;
@@ -359,12 +362,14 @@ header li:last-child{
 }
 .free .btn {
     background-color: white;
+    padding: 20px 90px;
+}
+.free .btn a {
     color: var(--custom-viol);
     font-size: 1.2rem;
     font-weight: bold;
-    padding: 20px 90px;
 }
-.free a {
+.free span a {
     text-decoration: underline;
 }
 /** FOOTER */
