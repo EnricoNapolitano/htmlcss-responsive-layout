@@ -339,6 +339,33 @@ header li:last-child{
 /* FREE SECTION */
 .free .row {
     padding: 60px 20px;
+    color: white
+}
+.free h3 {
+    color: rgba(255, 255, 255, 0.7);
+}
+.free h2 {
+    font-size: 2em;
+    text-align: center;
+}
+.free h2 > span {
+    color: var(--custom-orange);
+    font-size: 2.2em;
+} 
+.free p {
+    line-height: 30px;
+    text-align: center;
+    width: 360px;
+}
+.free .btn {
+    background-color: white;
+    color: var(--custom-viol);
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 20px 90px;
+}
+.free a {
+    text-decoration: underline;
 }
 /*! RESPONIVE */
 @media screen and (min-width: 768px) {
