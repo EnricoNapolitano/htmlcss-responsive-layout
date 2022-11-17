@@ -351,7 +351,7 @@ header li:last-child{
 .free h2 > span {
     color: var(--custom-orange);
     font-size: 2.2em;
-} 
+}
 .free p {
     line-height: 30px;
     text-align: center;
@@ -365,6 +365,11 @@ header li:last-child{
     padding: 20px 90px;
 }
 .free a {
+    text-decoration: underline;
+}
+/** FOOTER */
+footer a {
+    color: var(--custom-viol);
     text-decoration: underline;
 }
 /*! RESPONIVE */
